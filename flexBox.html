@@ -1,0 +1,66 @@
+<!--
+1. bydefault flex- direction is row
+2.flex-direction can - column, row , row-reverse, column-reverse
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex; 
+            flex-direction: row;
+            justify-content: start;
+            flex-wrap: wrap;
+            height: 900px;
+            /* justify-content: end;
+            justify-content: start;
+            justify-content: center;
+            justify-content: flex-end;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: stretch; */
+            /* justify-content: center;
+            justify-content: space-evenly; */
+            /* justify-content: center;
+            align-items: center; */
+            align-content: space-evenly;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 2px;
+        }
+        #b1{
+            background-color: brown;
+        }
+        #b2{
+            background-color: green;
+        }
+        #b3{
+            background-color: yellow;
+        }
+        #b4{
+            background-color: rgb(4, 46, 172);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="b1">box1</div>
+        <div class="box" id="b2">box2</div>
+        <div class="box" id="b3">box3</div>
+        <div class="box" id="b4">box4</div>
+    </div>
+</body>
+</html>

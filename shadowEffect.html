@@ -1,0 +1,59 @@
+<!-- 
+  box Shadow
+  x-axis, y-axis, blur-radius, spread-radius, color
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shado Effect</title>
+  <style>
+    /* access variable anywher */
+    :root{
+      --customColor: red;
+    }
+    .container{
+      border: 1px solid black;
+      height: 400px;
+      background-color: antiquewhite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box{
+      /* using custome variable */
+      /* --customColor: red; */
+
+      border: 1px solid black;
+      height: 320px;
+      width: 300px;
+      background-color: aqua;
+      margin: 10px;
+      padding: 5px;
+      /* justify-content: center; */
+      /* box-shadow: 10px 15px red; */
+      /* using blur radius */
+      /* box-shadow: 10px 15px 50px red; */
+      /* box-shadow: 10px 15px 50px 10px red; */
+      /* shadoe inside */
+      box-shadow: inset 10px 15px 50px 10px var(--customColor);
+    }
+    #heading{
+      text-shadow: 2px 2px  red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+
+      <img src="mj.JPG.jpg" alt="" width="100px">
+      <h2 id="heading">Welcom to Hell</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iusto iste, quod provident molestiae adipisci vel in id consectetur at fugit dolores nam numquam pariatur labore quos inventore veritatis illum.</p>
+
+    </div>
+    
+  </div>
+</body>
+</html>

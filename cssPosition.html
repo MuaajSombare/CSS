@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border: 1px solid black;
+        }
+        /* relative position */
+        /* .img2{
+            by default all's position is static so no operations - top, bottom,left,right performed on static positions,gap will maintain
+            position: relative;
+            top: 300px;
+            right: 100px;
+            left: 100px;
+        } */
+        /* Absolute position - gap will not maintain, used to overlap , positioned based on its nearest parent, parent ele. marked first as 'relative position' */
+        .container{
+            position: relative;
+            height: 500px;
+        }
+        .container2{
+            background-color: aquamarine;
+            height: 500px;
+        }
+        /* .img2{
+          
+            position: absolute;
+            top: 300px;
+            right: 100px;
+            left: 100px;
+        }  */
+        .img4{
+            /* image positioned fixed all over window */
+            position: fixed;
+        }
+        .img3{
+            /* image positioned fixed(sticky) within its parent tag */
+            position: sticky;
+            top: 0%;
+            /* here need to proved its top and other position to functioning */
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <img src="img1.jpg" alt="" class="img1" >
+        <img src="img2.jpg" alt="" class="img2">
+        <img src="mj.JPG.jpg" alt="" class="img3">
+        <img src="gas.jpg" alt="" class="img4">
+    </div>
+    <div class="container2">
+
+    </div>
+</body>
+</html>
